@@ -7,8 +7,8 @@ public class Phoneinfo
 {
 	String name; //이름
 	String phoneNumber; //전화번호
-	
-	
+	String birthday; // 생년월일
+
 	public Phoneinfo()
 	{
 		super();
@@ -18,15 +18,14 @@ public class Phoneinfo
 	{
 		this.name = name;
 		this.phoneNumber = phoneNumber;
-		
-		
+		this.birthday = birthday;
 	}
 	
 	public Phoneinfo(String name, String phoneNumber)
 	{
 		this.name = name;
 		this.phoneNumber = phoneNumber;
-		
+		this.birthday = birthday;
 	}
 	public void  showPhoneInfo()
 	{
@@ -72,5 +71,5 @@ public class Phoneinfo
 			}
 		}
 	}
-	
+
 }
