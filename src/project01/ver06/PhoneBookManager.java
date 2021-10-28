@@ -1,4 +1,4 @@
-package project01.ver04;
+package project01.ver06;
 
 import java.util.Scanner;
 
@@ -43,40 +43,38 @@ public class PhoneBookManager
 		choice = scan.nextInt();
 		scan.nextLine();
 		
-		
-		
-		if(choice == 1)
-		{
-			System.out.println("이름 : ");
-			iName = scan.nextLine();
-			System.out.println("전화번호 : ");
-			iPhone = scan.nextLine();
-			phon[numOfFriends++] = new Phoneinfo(iName,iPhone);
-		}
-		else if(choice == 2)
-		{
-			System.out.println("이름 : ");
-			iName = scan.nextLine();
-			System.out.println("전화번호 : ");
-			iPhone = scan.nextLine();
-			System.out.println("전공 : ");
-			imajor = scan.nextLine();
-			System.out.println("학년 : ");
-			ihaknumber = scan.nextLine();
-			phon[numOfFriends++] = new PhoneSchoolInfo(iName, iPhone, imajor, ihaknumber);
-			
-		}
-		else if(choice == 3)
-		{
-			System.out.println("이름 : ");
-			iName = scan.nextLine();
-			System.out.println("전화번호 : ");
-			iPhone = scan.nextLine();
-			System.out.println("회사 : ");
-			icompany = scan.nextLine();
-			phon[numOfFriends++] = new PhoneCompanyInfo(iName, iPhone, icompany);
-		}
-		System.out.println("데이터입력이 완료되었습니다.");
+			if(choice == 1)
+			{
+				System.out.println("이름 : ");
+				iName = scan.nextLine();
+				System.out.println("전화번호 : ");
+				iPhone = scan.nextLine();
+				phon[numOfFriends++] = new Phoneinfo(iName,iPhone);
+			}
+			else if(choice == 2)
+			{
+				System.out.println("이름 : ");
+				iName = scan.nextLine();
+				System.out.println("전화번호 : ");
+				iPhone = scan.nextLine();
+				System.out.println("전공 : ");
+				imajor = scan.nextLine();
+				System.out.println("학년 : ");
+				ihaknumber = scan.nextLine();
+				phon[numOfFriends++] = new PhoneSchoolInfo(iName, iPhone, imajor, ihaknumber);
+				
+			}
+			else if(choice == 3)
+			{
+				System.out.println("이름 : ");
+				iName = scan.nextLine();
+				System.out.println("전화번호 : ");
+				iPhone = scan.nextLine();
+				System.out.println("회사 : ");
+				icompany = scan.nextLine();
+				phon[numOfFriends++] = new PhoneCompanyInfo(iName, iPhone, icompany);
+			}
+			System.out.println("데이터입력이 완료되었습니다.");
 	}
 	//전체정보
 	public void dataAllShow()

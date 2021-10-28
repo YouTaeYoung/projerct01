@@ -1,4 +1,4 @@
-package project01.ver04;
+package project01.ver06;
 
 public class PhoneCompanyInfo extends Phoneinfo
 {

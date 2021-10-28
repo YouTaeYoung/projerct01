@@ -33,18 +33,7 @@ public class Phoneinfo
 		System.out.println("전화번호 : " +phoneNumber);
 		
 	}
-	public void menuShow2(Scanner scanner)
-	{
-		String iname,iphoneNumber,ibirthday;
-		System.out.print("이름 : "); 
-		iname = scanner.nextLine();
-		iname = scanner.nextLine();
-		System.out.print("전화번호 : "); 
-		iphoneNumber = scanner.nextLine();
-		System.out.println("생년월일 : ");
-		ibirthday = scanner.nextLine();
-		
-	}
+	
 	public void menuShow()
 	{
 		System.out.println("선택하시오.");
@@ -63,7 +52,17 @@ public class Phoneinfo
 			switch(choice)
 			{
 			case 1:
+				String iname,iphoneNumber,ibirthday;
+				System.out.print("이름 : "); 
+				iname = scanner.nextLine();
+				iname = scanner.nextLine();
+				System.out.print("전화번호 : "); 
+				iphoneNumber = scanner.nextLine();
+				System.out.println("생년월일 : ");
+				ibirthday = scanner.nextLine();
 				
+				Phoneinfo pi = new Phoneinfo(iname,iphoneNumber,ibirthday);
+				pi.showPhoneInfo();
 				break;
 			case 2:
 				System.out.println("프로그램종료");
