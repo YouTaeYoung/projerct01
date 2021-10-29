@@ -12,10 +12,13 @@ public class Phoneinfo
 		this.phoneNumber = phoneNumber;
 	}
 	
-	public Phoneinfo(String name, String phoneNumber,String major, String haknumber, String company)
+	public Phoneinfo(String name, String phoneNumber,String major, String haknumber)
 	{
 		super();
-		
+	}	
+	public Phoneinfo(String name, String phoneNumber, String company)
+	{
+		super();
 	}
 	
 	public void  showPhoneInfo()

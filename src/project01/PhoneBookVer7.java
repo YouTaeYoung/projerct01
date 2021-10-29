@@ -3,9 +3,9 @@ package project01;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import project01.ver06.Menuitem;
-import project01.ver06.MenuSelectException;
-import project01.ver06.PhoneBookManager;
+import project01.ver07.Menuitem;
+import project01.ver07.MenuSelectException;
+import project01.ver07.PhoneBookManager;
 
 public class PhoneBookVer7 implements Menuitem{
 	
@@ -26,7 +26,7 @@ public class PhoneBookVer7 implements Menuitem{
 					
 					switch (choice) {
 					case ADD:
-						pho1.dataInput();
+						pho1.dataInput(choice);
 						break;
 					case SER:
 						pho1.dataSearch();

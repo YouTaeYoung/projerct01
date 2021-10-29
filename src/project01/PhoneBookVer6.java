@@ -26,7 +26,7 @@ public class PhoneBookVer6 implements Menuitem{
 					
 					switch (choice) {
 					case ADD:
-						pho1.dataInput();
+						pho1.dataInput(choice);
 						break;
 					case SER:
 						pho1.dataSearch();

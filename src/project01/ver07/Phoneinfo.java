@@ -1,5 +1,6 @@
 package project01.ver07;
 
+
 public class Phoneinfo 
 {
 	String name; //이름
@@ -12,11 +13,16 @@ public class Phoneinfo
 		this.phoneNumber = phoneNumber;
 	}
 	
-	public Phoneinfo(String name, String phoneNumber,String major, String haknumber, String company)
+	public Phoneinfo(String name, String phoneNumber, String major , String haknumber)
+	{
+		super();
+	}
+	public Phoneinfo(String name, String phoneNumber, String company)
 	{
 		super();
 		
 	}
+	
 	
 	public void  showPhoneInfo()
 	{
@@ -24,11 +30,25 @@ public class Phoneinfo
 		System.out.println("전화번호 : " + phoneNumber);
 		
 	}
-	
-	
 	@Override
 	public boolean equals(Object obj)
 	{
-		return super.equals(obj);
+		Phoneinfo pio = (Phoneinfo)obj;
+		if(pio.name.equals(this.name))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		
+		
+	}
+	@Override
+	public int hashCode()
+	{
+		
+		return name.hashCode();
 	}
 }
